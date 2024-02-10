@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# Syndicate Motorsports OBS Display
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./public/2024-02-10-Syndicate-Motorsports-OBS-Logo.png" alt="Blog's logo" align="right" width="200" height="100">
 
-## Available Scripts
+This is the repo of Syndicate Motorsports OBS Displays and Overlays. You can see them live in action at
+https://twitch.tv/syndicatemotorsports. Also join our Discord at https://discord.gg/BcBKQ7w6WB
 
-In the project directory, you can run:
+## How It Works
 
-### `npm start`
+1. The data gets pulled from our servers
+2. React renders them dynamically in a website
+3. The website can be displayed as a browser-source inside OBS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Patch Notes
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Version 0.0.1**
+- Added `SimpleDriverData`-component
+- Added `ScrollingChampionshipStandings`-component
+- Added `VerticalChampionshipStandings`-component
 
-### `npm test`
+## Roadmap
+- More components
+- Add animations
+- Pull data from servers
+- 
+## Storybook
+- You can see all components on their own with Storybook. For this follow the installation-steps but instead of running `npm run start` run `npm run storybook dev -p 6006`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
+- NodeJS - [Download here](https://nodejs.org/en/download)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Clone this repo with `git clone https://github.com/Akashic101/syndicate-motorsport-obs-display.git`
+- Navigate into this repo with `syndicate-motorsport-obs-display`
+- Install all dependencies with `npm install`
+- Run the website with `npm run start`
+- Navigate to http://localhost:8080 to see the website
