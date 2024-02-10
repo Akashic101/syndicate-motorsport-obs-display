@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'RaceSport';
-    src: url('/src/font/Race\ Sport.ttf') format('truetype');
+  font-family: "RaceSport";
+  src: url("/src/font/Race\ Sport.ttf") format("truetype");
 }
 
 .App {
-    margin: 2%;
+  margin: 2%;
 }
 
 .simpleDriverData {
-    width: 350px;
+  width: 350px;
 }
 
 h1 {
-    font-family: 'RaceSport', sans-serif;
+  font-family: "RaceSport", sans-serif;
 }

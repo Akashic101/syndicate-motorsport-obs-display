@@ -1,59 +1,58 @@
 @font-face {
-    font-family: 'RaceSport';
-    src: url('/src/font/Race\ Sport.ttf') format('truetype');
+  font-family: "RaceSport";
+  src: url("/src/font/Race\ Sport.ttf") format("truetype");
 }
 
 .angled-rectangle {
-    font-family: 'RaceSport', sans-serif;
-    font-size: large;
-    max-width: 550px;
-    height: 50px;
-    display: inline-flex;
-    flex-grow: 1;
-    background: #303030;
-    transform: skewX(50deg);
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-    overflow: hidden
+  font-family: "RaceSport", sans-serif;
+  font-size: large;
+  max-width: 550px;
+  height: 50px;
+  display: inline-flex;
+  flex-grow: 1;
+  background: #303030;
+  transform: skewX(50deg);
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
-.angled-rectangle>* {
-    margin: 0;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    transform: skewX(-50deg);
-    color: white;
+.angled-rectangle > * {
+  margin: 0;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transform: skewX(-50deg);
+  color: white;
 }
 
 .position {
-    flex: 0 0 auto;
-    margin-left: 30px;
-    /* Don't allow the position to grow or shrink */
+  flex: 0 0 auto;
+  margin-left: 30px;
+  /* Don't allow the position to grow or shrink */
 }
 
 .countryflag {
-    margin-left: 25px;
-    margin-right: 5px;
-    /* Add spacing between the flag and the driver name */
+  margin-left: 25px;
+  margin-right: 5px;
+  /* Add spacing between the flag and the driver name */
 }
 
 .drivername {
-    flex-grow: 1;
-    /* Allow the driver name to grow and fill available space */
-    margin-right: 25px;
-    /* Add some margin to prevent it from sticking too closely to other elements */
+  flex-grow: 1;
+  /* Allow the driver name to grow and fill available space */
+  margin-right: 25px;
+  /* Add some margin to prevent it from sticking too closely to other elements */
 }
 
-
 .points {
-    flex: 0 0 auto;
-    padding-right: 30px;
-    /* Don't allow the points to grow or shrink */
+  flex: 0 0 auto;
+  padding-right: 30px;
+  /* Don't allow the points to grow or shrink */
 }
 
 .angled-rectangle:nth-of-type(2n) {
-    background-color: #555;
-    /* Change background color for every second occurrence */
+  background-color: #555;
+  /* Change background color for every second occurrence */
 }
