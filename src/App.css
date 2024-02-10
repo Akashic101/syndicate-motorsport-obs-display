@@ -1,3 +1,16 @@
-.drivers {
-    display: inline-flex;
+@font-face {
+    font-family: 'RaceSport';
+    src: url('/src/font/Race\ Sport.ttf') format('truetype');
+}
+
+.App {
+    margin: 2%;
+}
+
+.simpleDriverData {
+    width: 350px;
+}
+
+h1 {
+    font-family: 'RaceSport', sans-serif;
 }
