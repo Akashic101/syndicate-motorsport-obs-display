@@ -30,7 +30,7 @@ export default {
 
 type Story = StoryObj<typeof SimpleDriverData>;
 
-export const Primary = {
+export const Primary: Story = {
     args: {
         position: 1,
         countryCode: 'DE',
