@@ -15,7 +15,7 @@
     justify-content: space-around;
     display: flex;
     align-items: center;
-    overflow:hidden
+    overflow: hidden
 }
 
 .angled-rectangle>* {
@@ -40,10 +40,12 @@
 }
 
 .drivername {
-    flex-grow: 1; /* Allow the driver name to grow and fill available space */
-    margin-right: 25px; /* Add some margin to prevent it from sticking too closely to other elements */
-  }
-  
+    flex-grow: 1;
+    /* Allow the driver name to grow and fill available space */
+    margin-right: 25px;
+    /* Add some margin to prevent it from sticking too closely to other elements */
+}
+
 
 .points {
     flex: 0 0 auto;
@@ -52,9 +54,6 @@
 }
 
 .angled-rectangle:nth-of-type(2n) {
-    background-color: #555; /* Change background color for every second occurrence */
-  }
-
-.angled-rectangle:first-of-type {
-    margin-left: 30px;
-  }
+    background-color: #555;
+    /* Change background color for every second occurrence */
+}
