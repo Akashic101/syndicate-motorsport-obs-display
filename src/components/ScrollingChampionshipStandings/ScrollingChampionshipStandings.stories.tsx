@@ -5,27 +5,13 @@ export default {
     title: 'ScrollingChampionshipStandings',
     component: ScrollingChampionshipStandings,
     argTypes: {
-        position: {
-            type: 'number',
-            control: { type: 'number' },
-            description: "The position of the driver"
+        standings: {
+          control: {
+            type: 'object',
+          },
+          description: 'An array of objects of the standings in a championship',
         },
-        countryCode: {
-            type: 'string',
-            control: { type: 'text' },
-            description: "The two-letter code of the country following the ISO 3166-1 alpha-2 standard"
-        },
-        driverName: {
-            type: 'string',
-            control: { type: 'text' },
-            description: "The name of the driver"
-        },
-        points: {
-            type: 'number',
-            control: { type: 'number' },
-            description: "The points of the driver"
-        },
-    },
+      },
 } as Meta;
 
 type Story = StoryObj<typeof ScrollingChampionshipStandings>;
