@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ScrollingChampionshipStandings.module.css";
+import styles from "./HorizontalChampionshipStandings.module.css";
 import SimpleDriverData from "../SimpleDriverData/SimpleDriverData";
 
 interface StandingData {
@@ -9,12 +9,12 @@ interface StandingData {
   points: number;
 }
 
-interface ScrollingChampionshipStandingsProps {
+interface HorizontalChampionshipStandingsProps {
   standings: StandingData[];
 }
 
-const ScrollingChampionshipStandings: React.FC<
-  ScrollingChampionshipStandingsProps
+const HorizontalChampionshipStandings: React.FC<
+  HorizontalChampionshipStandingsProps
 > = ({ standings }) => {
   return (
     <div className={styles["standings"]}>
@@ -25,10 +25,11 @@ const ScrollingChampionshipStandings: React.FC<
           countryCode={standing.countryCode}
           driverName={standing.driverName}
           points={standing.points}
+          horizontal={true}
         />
       ))}
     </div>
   );
 };
 
-export default ScrollingChampionshipStandings;
+export default HorizontalChampionshipStandings;

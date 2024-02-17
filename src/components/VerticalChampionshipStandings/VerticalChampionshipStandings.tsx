@@ -25,6 +25,7 @@ const VerticalChampionshipStandings: React.FC<
           countryCode={standing.countryCode}
           driverName={standing.driverName}
           points={standing.points}
+          horizontal={false}
         />
       ))}
     </div>

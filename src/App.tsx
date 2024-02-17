@@ -1,5 +1,5 @@
 import "./App.css";
-import ScrollingChampionshipStandings from "./components/ScrollingChampionshipStandings/ScrollingChampionshipStandings";
+import HorizontalChampionshipStandings from "./components/HorizontalChampionshipStandings/HorizontalChampionshipStandings";
 import SimpleDriverData from "./components/SimpleDriverData/SimpleDriverData";
 import VerticalChampionshipStandings from "./components/VerticalChampionshipStandings/VerticalChampionshipStandings";
 
@@ -21,11 +21,12 @@ function App() {
           countryCode={"DE"}
           driverName={"Akashic"}
           points={49}
+          horizontal={false}
         />
       </div>
       <hr />
-      <h1>Scrolling Championship Standings</h1>
-      <ScrollingChampionshipStandings standings={standingsTemplateData} />
+      <h1>Horizontal Championship Standings</h1>
+      <HorizontalChampionshipStandings standings={standingsTemplateData} />
       <hr />
       <h1>Vertical Championship Standings</h1>
       <VerticalChampionshipStandings standings={standingsTemplateData} />

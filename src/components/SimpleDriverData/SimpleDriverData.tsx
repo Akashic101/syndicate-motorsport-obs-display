@@ -7,6 +7,7 @@ interface SimpleDriverDataProps {
   countryCode: string;
   driverName: string;
   points: number;
+  horizontal: boolean; // New prop
 }
 
 const SimpleDriverData: React.FC<SimpleDriverDataProps> = ({
@@ -14,9 +15,10 @@ const SimpleDriverData: React.FC<SimpleDriverDataProps> = ({
   countryCode,
   driverName,
   points,
+  horizontal
 }) => {
   return (
-    <div className={styles["angled-rectangle"]}>
+    <div className={`${styles["angled-rectangle"]} ${horizontal ? styles["horizontal"] : ''}`}>
       <p className={styles["position"]}>{position}</p>
       <ReactCountryFlag
         className={styles["countryflag"]}

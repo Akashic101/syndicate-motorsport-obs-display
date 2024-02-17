@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from "@storybook/react";
-import ScrollingChampionshipStandings from "./ScrollingChampionshipStandings";
+import HorizontalChampionshipStandings from "./HorizontalChampionshipStandings";
 
 export default {
-  title: "ScrollingChampionshipStandings",
-  component: ScrollingChampionshipStandings,
+  title: "HorizontalChampionshipStandings",
+  component: HorizontalChampionshipStandings,
   argTypes: {
     standings: {
       control: {
@@ -14,7 +14,7 @@ export default {
   },
 } as Meta;
 
-type Story = StoryObj<typeof ScrollingChampionshipStandings>;
+type Story = StoryObj<typeof HorizontalChampionshipStandings>;
 
 export const Primary: Story = {
   args: {
