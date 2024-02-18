@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import SimpleDriverData from "./SimpleDriverData";
 
 export default {
-  title: "SimpleDriverData",
+  title: "Championship standings/Simple Driver Data",
   component: SimpleDriverData,
   argTypes: {
     position: {

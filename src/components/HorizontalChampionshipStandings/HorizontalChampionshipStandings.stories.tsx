@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import HorizontalChampionshipStandings from "./HorizontalChampionshipStandings";
 
 export default {
-  title: "HorizontalChampionshipStandings",
+  title: "Championship standings/Horizontal Championship Standings",
   component: HorizontalChampionshipStandings,
   argTypes: {
     standings: {
